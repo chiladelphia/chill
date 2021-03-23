@@ -2,6 +2,26 @@ import { FuseNavigation } from '@fuse/types';
 
 export const navigation: FuseNavigation[] = [
     {
+        id: 'chill',
+        title: 'CHill',
+        type: 'collapsable',
+        icon: 'import_contacts',
+        children: [
+            {
+                id: 'fuse-config',
+                title: 'Fuse Config',
+                type: 'item',
+                url: '/documentation/services/fuse-config'
+            },
+            {
+                id: 'fuse-splash-screen',
+                title: 'Fuse Splash Screen',
+                type: 'item',
+                url: '/documentation/services/fuse-splash-screen'
+            }
+        ]
+    },
+    {
         id: 'applications',
         title: 'Applications',
         translate: 'NAV.APPLICATIONS',
